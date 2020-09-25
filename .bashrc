@@ -162,3 +162,17 @@ alias gr='git rebase'
 alias gri='git rebase --interactive'
 alias gcp='git cherry-pick'
 alias grm='git rm'
+
+# Real-time clock
+alias tt="watch -pct -n 1 \"date '+%Y.%m.%d %H:%M:%S'| toilet --filter border -w 150 -f mono9\""
+alias tt_metal="watch -pct -n 1 \"date '+%Y.%m.%d %H:%M:%S'| toilet --filter border:metal -w 150 -f mono9\""
+alias tt_small="watch -pct -n 1 \"date '+%Y/%m/%d %H:%M:%S'| toilet --filter border -w 135 -f wideterm\""
+
+# Recursively grep string in files under current path
+ff() {
+  grep -rwn . -e $1
+}
+
+# Ansible Command Shortcut
+alias ap='ansible-playbook'
+alias av='ansible-vault'
